@@ -1,0 +1,17 @@
+{% extends 'main/layout.html' %}
+
+{% load static %}
+
+{% block title %}Контакты{% endblock %}
+
+{% block contact %}
+    <h1>Связь с нами:</h1>
+    <h2>Мы предоставляем жестянно-малярочные работы в г.Омск по адресу улица 10-я комсомольская, дом 24</h2>
+    <h3>Номер телефона: </h3>
+    <a href=”tel:+79136165958”>+7(913) 616-59-58</a>
+    <img src="{% static 'img/qr.png' %}" alt="">
+{% endblock %}
+
+{% block mail %}
+    <a href="mailto:garage_omsk24@bk.ru">garage_omsk24@bk.ru</a>
+{% endblock %}

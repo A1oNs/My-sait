@@ -1,0 +1,15 @@
+{% extends 'main/layout.html' %}
+
+{% block title %}Запись выполнена{% endblock %}
+
+{% block rec %}
+    <h1>Запись успешно выполнена</h1>
+    <h2>Вы успешно записались к нам на осмотр. Сейчас вас перенаправит на главную страницу...</h2>
+
+    <script>
+        setTimeout(function(){
+            location.href="{% url 'home' %}"
+        }, 3000)
+    </script>
+
+{% endblock %}

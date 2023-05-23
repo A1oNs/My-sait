@@ -1,0 +1,17 @@
+{% extends 'main/layout.html' %}
+
+{% block title %}Запись{% endblock %}
+
+{% block rec %}
+    <div class="features">
+        <form method="POST">
+            {{ form.name }}
+            {{ form.number }}<br>
+            {{ form.comment }}<br>
+            {{ form.data }}<br>
+            <span>{{ error }}</span>
+            <button class="btn btn-success" name="submit" type="submit">Записатся</button>
+            {% csrf_token %}
+        </form>
+    </div>
+{% endblock %}

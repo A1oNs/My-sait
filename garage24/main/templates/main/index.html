@@ -1,0 +1,15 @@
+{% extends 'main/layout.html' %}
+
+{% load static %}
+
+{% block title %}Главная страница{% endblock %}
+
+{% block content %}
+    <div class="features">
+        <img src="{% static 'img/запись.png' %}">
+        <ol></ol><a href="record"><li><button class="btn btn-info">ЗАПИСАТСЯ</button></li></a></ol>
+    </div>
+{% endblock %}
+
+
+
